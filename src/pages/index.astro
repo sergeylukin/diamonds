@@ -38,10 +38,50 @@ import Card from '../components/Card.astro';
       </section>
       <section
         id="About"
+        class="snap-start justify-start align-top items-start md:items-end h-screen"
+      >
+      <div class="flex text-xs">
+        <div class="w-[50%] mt-24">
+          <p class="revealOnScroll px-24" data-animation="slideInLeft"
+            data-timeout="0.01s" data-duration="1500">
+            The planning and marking stage is one of the most important steps
+            in the diamond cutting process. Our team of experts use
+            state-of-the-art technology to analyze each rough diamond and
+            determine the best possible cut and shape for maximum brilliance
+            and profit.
+          </p>
+          <a href="javascript:void(0);" class="wow fadeIn mt-6 flex" data-wow-delay="1s">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <span class="pl-1">read more</span>
+          </a>
+        </div>
+        <div class="w-[50%] px-24 mt-24">
+          <p class="revealOnScroll" data-animation="slideInRight"
+            data-timeout="0.01s" data-duration="1500">
+            The planning and marking stage is one of the most important steps
+            in the diamond cutting process. Our team of experts use
+            state-of-the-art technology to analyze each rough diamond and
+            determine the best possible cut and shape for maximum brilliance
+            and profit.
+          </p>
+          </div>
+          </div>
+      </section>
+      <section
+        id="Third"
         class="flex-col snap-start justify-start align-top items-start md:items-end pl-[10%] md:pr-60 h-screen"
       >
         <div class="w-[50vw] md:w-56 mt-24">
-          <p class="wow slideInLeft about-left-text" data-wow-delay=".4s">
+          <p class="slideInRight" data-wow-delay=".4s">
             The planning and marking stage is one of the most important steps
             in the diamond cutting process. Our team of experts use
             state-of-the-art technology to analyze each rough diamond and
@@ -134,4 +174,5 @@ import Card from '../components/Card.astro';
 
 <script>
   import "../components/index_scroll.js";
+  /* import "../components/ScrollMagic.min.js"; */
 </script>
